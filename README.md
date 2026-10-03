@@ -1,14 +1,14 @@
-# quesbb
+#                                                   quesbb
 
 A simple Java console-based question and answer program.
 
-## About
+##                                                   About
 
 `quesbb` is a small Java project designed to provide categorized questions and answers through a simple console interface.
 
 The project is intentionally kept lightweight so that it can be compiled and run without external libraries.
 
-## Features
+##                                                 Features
 
 * Categorized questions
 * Randomized question selection
@@ -17,7 +17,7 @@ The project is intentionally kept lightweight so that it can be compiled and run
 * Simple single-file Java setup
 * No external dependencies
 
-## Current Categories
+##                                                Current Categories
 
 * Maths
 * PCC
@@ -25,11 +25,11 @@ The project is intentionally kept lightweight so that it can be compiled and run
 * OB
 * ETC
 
-## Requirements
+##                                                 Requirements
 
 * Java 17 or newer
 
-## Running
+##                                                   Running
 
 Compile:
 
@@ -43,12 +43,11 @@ Run:
 java -cp bin quesbb
 ```
 
-## Project Status
+##                                               Project Status
 
 Currently in active development.
 
-## Version
+##                                                Version**v1.0.0**
 
-**v1.0.0**
 
 See [CHANGELOG.md](CHANGELOG.md) for the version history.
