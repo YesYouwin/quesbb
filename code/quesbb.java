@@ -111,7 +111,6 @@ public class quesbb {
     
     static int qna(String subject) {
         String questions = fetchinfo(subject);
-        System.out.println(questions);
         int qc = 0;
         int sp = 0;
         int sxp = 0;
@@ -174,12 +173,19 @@ public class quesbb {
     
             int xpPosition = questions.indexOf("\"xp\"",answerEnd);
             int xpStart = questions.indexOf(":", xpPosition) + 1;
-            int xpEnd = questions.indexOf("}",xpStart);
+            int xpEnd = questions.indexOf(",",xpStart);
             int questionXP = Integer.parseInt(questions.substring(xpStart, xpEnd).trim());
-    
+
+            int topicpos = questions.indexOf("\"topic\"", xpEnd);
+            int topicStart =  questions.indexOf("\"", topicpos + 7) + 1;
+            int topicEnd = questions.indexOf("\"", topicStart);
+            String topic = questions.substring(topicStart,topicEnd);
+
+            System.out.println("This Question Belongs To Topic: " + topic );
             System.out.println("* " + question + " (Type 'Exit' If You want to leave )");
             System.out.print("Ans:- ");
             String ans = input.nextLine();
+            if (ans.equalsIgnoreCase("exit")) {break;}
 
             for (String keyword : keywordList) {
                 if (!ans.toLowerCase().contains(keyword.toLowerCase())) {
@@ -198,7 +204,6 @@ public class quesbb {
                 System.out.println("+" + questionXP + " XP");
                 sxp += questionXP;
             }
-            else if (ans.equalsIgnoreCase("exit")) {break;}
             else {
                 System.out.println("\n\u001B[31m"+ bul +"\u001B[0m");
                 System.out.println("Correct answer: "+ correctAnswer);
@@ -206,6 +211,7 @@ public class quesbb {
         }
         return sxp;
     }
+
 }
 
 
