@@ -1,0 +1,104 @@
+.about-page {
+    width: 100%;
+    padding: 1px 20px 60px;
+    box-sizing: border-box;
+}
+
+/* Main introduction card */
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 28px;
+
+    width: min(100%, 1100px);
+    margin: 80px auto 60px;
+    padding: 45px 35px;
+
+    box-sizing: border-box;
+
+    background: var(--surface-soft);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 28px;
+    box-shadow: 0 8px 24px rgba(94, 49, 38, 0.08);
+}
+
+.heading {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    text-underline-position: below;
+    font-size: clamp(28px, 4vw, 42px);
+}
+
+.about-description {
+    max-width: 750px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+.Quotes {
+    margin-top: 5px;
+    font-size: clamp(20px, 3vw, 28px);
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.Quotes p {
+    margin: 0;
+}
+
+.java-memory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    margin: 10px 0 0;
+}
+
+.imgjav {
+    display: block;
+    width: min(400px, 100%);
+    height: auto;
+    object-fit: contain;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(138, 43, 226, 0.25);
+    border-radius: 16px;
+}
+
+.java-memory figcaption {
+    font-size: 14px;
+    opacity: 0.65;
+    font-style: italic;
+}
+
+.about-next {
+    width: min(100%, 1100px);
+    margin: 0 auto 60px;
+}
+
+@media (max-width: 600px) {
+    .aboutus {
+        margin-top: 35px;
+        padding: 30px 20px;
+        gap: 22px;
+    }
+
+    .about-description {
+        font-size: 15px;
+    }
+
+    .imgjav {
+        width: min(100%, 350px);
+    }
+}

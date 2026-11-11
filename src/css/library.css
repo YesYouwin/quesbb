@@ -1,0 +1,58 @@
+.semhead {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+.lib-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  flex-direction: grid;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: lightyellow;
+  border-radius: 12px;
+  margin: 5px;
+  width: 300px;
+  min-height: 200px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-overflow:hide;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+.short_name {
+    font-weight: bold;
+    font-size: 26px;
+    border-radius: 20px;
+}
+
+.inner-card {
+    background: linear-gradient(to bottom, bisque,azure);;
+}
+
+.des {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  min-height: calc(1.4em * 3);
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* This is the line that shortens shit*/
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
