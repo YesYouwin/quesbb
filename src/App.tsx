@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Practice from './practice'
 import Library from './library'
 import About from './about'
+import SubjectQuestions from './libsub'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/practice" element={<Practice />} />
         <Route path="/library" element={<Library />} />
+        <Route path="/library/:subjectId" element={<SubjectQuestions />} />
       </Routes>
     </BrowserRouter>
   )

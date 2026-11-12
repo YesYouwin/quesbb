@@ -1,0 +1,45 @@
+.qa-card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color:darkgreen;
+    color: white;
+    border-radius: 12px;
+    margin: 5px;
+    width: 400px;
+    min-height: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-overflow:hide;
+}
+
+.card-arranger {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: grid;
+}
+
+.qa-question {
+    font-weight: bolder;
+    background-color;
+    border-radius: 20px;
+}
+
+.qa-answer {
+    font-style:italic
+}
+
+@media (max-width: 600px) {
+  .qa-card {
+    width: 90%;
+    margin: 10px;
+  }
+}
+
+.everythong {
+    text-align: center;
+}
